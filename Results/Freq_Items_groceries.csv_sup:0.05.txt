@@ -1,0 +1,31 @@
+brown bread,638
+butter,545
+citrus fruit,814
+pastry,875
+whole milk,2513
+yogurt,1372
+rolls/buns,1809
+root vegetables,1072
+soda,1715
+napkins,515
+coffee,571
+domestic eggs,624
+fruit/vegetable juice,711
+pip fruit,744
+canned beer,764
+newspapers,785
+pork,567
+tropical fruit,1032
+beef,516
+curd,524
+sausage,924
+frankfurter,580
+whipped/sour cream,705
+bottled beer,792
+bottled water,1087
+other vegetables,1903
+margarine,576
+shopping bags,969
+whole milk,yogurt,551
+rolls/buns,whole milk,557
+other vegetables,whole milk,736

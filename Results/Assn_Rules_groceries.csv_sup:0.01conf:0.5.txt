@@ -1,0 +1,14 @@
+curd, yogurt, 170  ---> whole milk,2513  0.582
+butter, other vegetables, 197  ---> whole milk,2513  0.574
+domestic eggs, other vegetables, 219  ---> whole milk,2513  0.553
+whipped/sour cream, yogurt, 204  ---> whole milk,2513  0.525
+other vegetables, whipped/sour cream, 284  ---> whole milk,2513  0.507
+other vegetables, pip fruit, 257  ---> whole milk,2513  0.518
+citrus fruit, root vegetables, 174  ---> other vegetables,1903  0.586
+root vegetables, tropical fruit, 207  ---> other vegetables,1903  0.585
+root vegetables, tropical fruit, 207  ---> whole milk,2513  0.57
+tropical fruit, yogurt, 288  ---> whole milk,2513  0.517
+root vegetables, yogurt, 254  ---> whole milk,2513  0.563
+rolls/buns, root vegetables, 239  ---> other vegetables,1903  0.502
+rolls/buns, root vegetables, 239  ---> whole milk,2513  0.523
+other vegetables, yogurt, 427  ---> whole milk,2513  0.513

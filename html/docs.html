@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to Associative Rule Mining’s documentation! &mdash; Associative Rule Mining 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Associative Rule Mining
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Associative Rule Mining’s documentation!</a><ul>
+<li><a class="reference internal" href="#apriori-py">Apriori.py</a></li>
+<li><a class="reference internal" href="#assocrulemining-py">AssocRuleMining.py</a></li>
+<li><a class="reference internal" href="#fp-py">FP.py</a></li>
+<li><a class="reference internal" href="#fpgrowth-py">FPGrowth.py</a></li>
+<li><a class="reference internal" href="#frequentsetops-py">FrequentSetOps.py</a></li>
+<li><a class="reference internal" href="#hashtree-py">HashTree.py</a></li>
+<li><a class="reference internal" href="#preprocess-py">Preprocess.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Associative Rule Mining</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to Associative Rule Mining’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-Apriori">
+<span id="welcome-to-associative-rule-mining-s-documentation"></span><h1>Welcome to Associative Rule Mining’s documentation!<a class="headerlink" href="#module-Apriori" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="apriori-py">
+<h2>Apriori.py<a class="headerlink" href="#apriori-py" title="Permalink to this headline">¶</a></h2>
+<p>Contains the functions required to generate frequent itemsets by pruning and using the apriori algorithm.</p>
+<dl class="function">
+<dt id="Apriori.aprioriAlgo">
+<code class="descclassname">Apriori.</code><code class="descname">aprioriAlgo</code><span class="sig-paren">(</span><em>filename</em>, <em>min_sup</em><span class="sig-paren">)</span><a class="headerlink" href="#Apriori.aprioriAlgo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function which implements the apriori algorithm by using candidate generation and pruning iteratively. It returns a list of frequent itemsets,
+given a set of transactions.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Apriori.generateCandidates">
+<code class="descclassname">Apriori.</code><code class="descname">generateCandidates</code><span class="sig-paren">(</span><em>prev_freq_sets</em><span class="sig-paren">)</span><a class="headerlink" href="#Apriori.generateCandidates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function which generates all the candidates of itemsets for next generation, i.e., if given a set of frequent itemsets each of length k,
+the function returns a list of all itemsets of size k+1 that can be generated from given set.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Apriori.prune">
+<code class="descclassname">Apriori.</code><code class="descname">prune</code><span class="sig-paren">(</span><em>dataset</em>, <em>curr_freq_sets</em>, <em>total_transactions</em>, <em>HTs</em>, <em>min_sup</em><span class="sig-paren">)</span><a class="headerlink" href="#Apriori.prune" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function which takes all the candidates and counts support count of each itemset to remove the itemsets which do not cross
+the minimum support threshold. It returns all the itemsets whose support count is greater than minimum support.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-AssocRuleMining"></span><div class="section" id="assocrulemining-py">
+<h2>AssocRuleMining.py<a class="headerlink" href="#assocrulemining-py" title="Permalink to this headline">¶</a></h2>
+<p>This is the main python file which runs an Apriori algorithm as well as a FP-Growth algorithm on the given dataset.
+It outputs a list of frequent itemsets, maximal itemsets, closed frequent itemsets and mines list of association rules.</p>
+<dl class="function">
+<dt id="AssocRuleMining.getPickledData">
+<code class="descclassname">AssocRuleMining.</code><code class="descname">getPickledData</code><span class="sig-paren">(</span><em>filename</em>, <em>min_sup</em>, <em>confidence</em><span class="sig-paren">)</span><a class="headerlink" href="#AssocRuleMining.getPickledData" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function retrieves the data, if it exists, stored to the pickle file.
+It gets the list of frequent itemsets, hashtrees and a list of items from the stored pickle files.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="AssocRuleMining.parseArguements">
+<code class="descclassname">AssocRuleMining.</code><code class="descname">parseArguements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#AssocRuleMining.parseArguements" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function gets the list of all arguments from the command line.
+It extracts the filename of the dataset, the algorithm to be used to generate frequent sets, the minimum support and
+confidence values to be used for mining the association rules.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="AssocRuleMining.pickleData">
+<code class="descclassname">AssocRuleMining.</code><code class="descname">pickleData</code><span class="sig-paren">(</span><em>filename</em>, <em>min_sup</em>, <em>confidence</em>, <em>HTs</em>, <em>item_list</em>, <em>freq_sets</em><span class="sig-paren">)</span><a class="headerlink" href="#AssocRuleMining.pickleData" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function writes data to a pickle file to be re-used later so as to decrease runtime and make the program efficient.
+It writes all the constructed hashtrees, list of frequent itemsets and list of items to their respective pickle files.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-FP"></span><div class="section" id="fp-py">
+<h2>FP.py<a class="headerlink" href="#fp-py" title="Permalink to this headline">¶</a></h2>
+<p>Contains the classes required to prepare a FPtree.</p>
+<dl class="class">
+<dt id="FP.FPLists">
+<em class="property">class </em><code class="descclassname">FP.</code><code class="descname">FPLists</code><span class="sig-paren">(</span><em>FPTree</em><span class="sig-paren">)</span><a class="headerlink" href="#FP.FPLists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Contains the following attributes:</p>
+<ul class="simple">
+<li>tree: an FPtree of the transactions.</li>
+<li>lists: a list of pointers to the leaf nodes of the FPtree.</li>
+</ul>
+<dl class="method">
+<dt id="FP.FPLists.create_lists">
+<code class="descname">create_lists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FP.FPLists.create_lists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the list of pointers to the leaf nodes of FPtree.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="FP.FPNode">
+<em class="property">class </em><code class="descclassname">FP.</code><code class="descname">FPNode</code><span class="sig-paren">(</span><em>value</em>, <em>parent</em><span class="sig-paren">)</span><a class="headerlink" href="#FP.FPNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the nodes of the FPtree. Following are its attributes:</p>
+<ul class="simple">
+<li>value: contains the item represented by the node.</li>
+<li>count: the frequency of the item along that edge of the tree.</li>
+<li>next_nodes: it is a dictionary of all the children of the current node.</li>
+<li>parent: a pointer to the parent of the current node.</li>
+</ul>
+</dd></dl>
+
+<dl class="class">
+<dt id="FP.FPTree">
+<em class="property">class </em><code class="descclassname">FP.</code><code class="descname">FPTree</code><a class="headerlink" href="#FP.FPTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the structure of the FPtree. Following are its attributes:</p>
+<ul class="simple">
+<li>root: pointer to the root of the FPtree.</li>
+<li>curr_node: pointer to the current node of the tree.</li>
+<li>total_count: a dictionary containing the total frequency of each item in the dataset.</li>
+</ul>
+<dl class="method">
+<dt id="FP.FPTree.construct_tree">
+<code class="descname">construct_tree</code><span class="sig-paren">(</span><em>transactions</em><span class="sig-paren">)</span><a class="headerlink" href="#FP.FPTree.construct_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accepts the list of transactions as an argument and constructs a FPtree.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="FP.FPTree.initialize_curr_node">
+<code class="descname">initialize_curr_node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#FP.FPTree.initialize_curr_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes the curr_node point to the root of the tree.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-FPGrowth"></span><div class="section" id="fpgrowth-py">
+<h2>FPGrowth.py<a class="headerlink" href="#fpgrowth-py" title="Permalink to this headline">¶</a></h2>
+<p>Contains the  method  FPGrowthAlgo and related methods required to create FPtree for getting
+the frequent sets.</p>
+<dl class="function">
+<dt id="FPGrowth.fPGrowthAlgo">
+<code class="descclassname">FPGrowth.</code><code class="descname">fPGrowthAlgo</code><span class="sig-paren">(</span><em>filename</em>, <em>min_sup=0.02</em><span class="sig-paren">)</span><a class="headerlink" href="#FPGrowth.fPGrowthAlgo" title="Permalink to this definition">¶</a></dt>
+<dd><p>It accepts the file of transactions and the value of minimum support and
+returns a list of frequent sets obtained from the FPtree.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FPGrowth.get_frequent_sets">
+<code class="descclassname">FPGrowth.</code><code class="descname">get_frequent_sets</code><span class="sig-paren">(</span><em>tree_lists</em>, <em>frequent_sets</em>, <em>item_list_sorted</em>, <em>len_trans</em>, <em>min_sup</em>, <em>HTs</em><span class="sig-paren">)</span><a class="headerlink" href="#FPGrowth.get_frequent_sets" title="Permalink to this definition">¶</a></dt>
+<dd><p>calls the method process ‘n’ number of times where ‘n’ is the
+number of items present in the list item_list_sorted. The method is
+called for the item with minimum frequency first and so on until
+the item with maximum frequency.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FPGrowth.process">
+<code class="descclassname">FPGrowth.</code><code class="descname">process</code><span class="sig-paren">(</span><em>tree_lists</em>, <em>items</em>, <em>index</em>, <em>frequent_sets</em>, <em>temp_list</em>, <em>len_trans</em>, <em>min_sup</em>, <em>HTs</em><span class="sig-paren">)</span><a class="headerlink" href="#FPGrowth.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>It is a recursive function that checks whether a given sequence of items
+is a frequent set. If it is appends the sequence into the list frequent_sets.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FPGrowth.sort_items_by_support">
+<code class="descclassname">FPGrowth.</code><code class="descname">sort_items_by_support</code><span class="sig-paren">(</span><em>transactions</em>, <em>items_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#FPGrowth.sort_items_by_support" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accepts two arguments,the list of transactions and a dictionary of items. It counts the frequency
+of each item in the transaction and returns a list sorted in descending order of the frequency
+of items.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FPGrowth.update_transactions">
+<code class="descclassname">FPGrowth.</code><code class="descname">update_transactions</code><span class="sig-paren">(</span><em>transactions</em>, <em>items_dict</em>, <em>item_list_sorted</em><span class="sig-paren">)</span><a class="headerlink" href="#FPGrowth.update_transactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the order of the items present in a transaction based on the
+order of items given in the list item_list_sorted.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-FrequentSetOps"></span><div class="section" id="frequentsetops-py">
+<h2>FrequentSetOps.py<a class="headerlink" href="#frequentsetops-py" title="Permalink to this headline">¶</a></h2>
+<p>This file contains all the functions required to calculate maximal frequent sets, closed frequent sets
+and association rules from the list of frequent itemsets and hashtrees.</p>
+<dl class="function">
+<dt id="FrequentSetOps.findRules">
+<code class="descclassname">FrequentSetOps.</code><code class="descname">findRules</code><span class="sig-paren">(</span><em>freq_sets</em>, <em>HTs</em>, <em>confidence</em><span class="sig-paren">)</span><a class="headerlink" href="#FrequentSetOps.findRules" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a list of association rules given a list of frequent itemsets, hashtrees and a minimum confidence value.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FrequentSetOps.getClosedFreqSets">
+<code class="descclassname">FrequentSetOps.</code><code class="descname">getClosedFreqSets</code><span class="sig-paren">(</span><em>freq_sets</em>, <em>HTs</em><span class="sig-paren">)</span><a class="headerlink" href="#FrequentSetOps.getClosedFreqSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a list of Closed frequent sets given a list of frequent itemsets.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FrequentSetOps.getMaxFreqSets">
+<code class="descclassname">FrequentSetOps.</code><code class="descname">getMaxFreqSets</code><span class="sig-paren">(</span><em>freq_sets</em><span class="sig-paren">)</span><a class="headerlink" href="#FrequentSetOps.getMaxFreqSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a list of Maximal frequent sets given a list of frequent itemsets.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="FrequentSetOps.subsets">
+<code class="descclassname">FrequentSetOps.</code><code class="descname">subsets</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#FrequentSetOps.subsets" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates a list of all subsets of a given set s.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-HashTree"></span><div class="section" id="hashtree-py">
+<h2>HashTree.py<a class="headerlink" href="#hashtree-py" title="Permalink to this headline">¶</a></h2>
+<p>Contains the classes implementing a hash tree and the nodes in the tree along with the related methods.</p>
+<dl class="class">
+<dt id="HashTree.HTNode">
+<em class="property">class </em><code class="descclassname">HashTree.</code><code class="descname">HTNode</code><a class="headerlink" href="#HashTree.HTNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class implementing the node in the hash tree.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="HashTree.HTree">
+<em class="property">class </em><code class="descclassname">HashTree.</code><code class="descname">HTree</code><span class="sig-paren">(</span><em>length</em>, <em>mod</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.HTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class implementing the hash tree used to store frequent item sets along with their support counts.</p>
+<dl class="method">
+<dt id="HashTree.HTree.getSupportCount">
+<code class="descname">getSupportCount</code><span class="sig-paren">(</span><em>item_set</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.HTree.getSupportCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to retrieve the support count of a given item set.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="HashTree.HTree.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>item_set</em>, <em>supp_count</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.HTree.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to insert a frequent item set into the hashtree along with its support count.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.createHTs">
+<code class="descclassname">HashTree.</code><code class="descname">createHTs</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.createHTs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to create hash trees of all required lengths of item sets given the data file</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.documentFreqSets">
+<code class="descclassname">HashTree.</code><code class="descname">documentFreqSets</code><span class="sig-paren">(</span><em>HTs</em>, <em>item_list</em>, <em>min_sup</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.documentFreqSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method used to document all the frequent sets found along with their support counts</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.documentRules">
+<code class="descclassname">HashTree.</code><code class="descname">documentRules</code><span class="sig-paren">(</span><em>HTs</em>, <em>item_list</em>, <em>rules</em>, <em>min_sup</em>, <em>conf</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.documentRules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to document all rules that have been found.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.findMaxItems">
+<code class="descclassname">HashTree.</code><code class="descname">findMaxItems</code><span class="sig-paren">(</span><em>dataset</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.findMaxItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Utility method used to find the maximum number of items in one transaction.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.generateHTs">
+<code class="descclassname">HashTree.</code><code class="descname">generateHTs</code><span class="sig-paren">(</span><em>filename</em>, <em>freq_sets</em>, <em>min_sup</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.generateHTs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to generate hash trees given all frequent item sets along with their support counts.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="HashTree.writeSetsToFile">
+<code class="descclassname">HashTree.</code><code class="descname">writeSetsToFile</code><span class="sig-paren">(</span><em>node</em>, <em>item_list</em>, <em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#HashTree.writeSetsToFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursive method to travers a hash tree and write all item sets along with the support counts to a file.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-Preprocess"></span><div class="section" id="preprocess-py">
+<h2>Preprocess.py<a class="headerlink" href="#preprocess-py" title="Permalink to this headline">¶</a></h2>
+<p>Contains methods required ofr certain pre-processing operations on given transaction dataset.</p>
+<dl class="function">
+<dt id="Preprocess.binarizeTransactions">
+<code class="descclassname">Preprocess.</code><code class="descname">binarizeTransactions</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.binarizeTransactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the textual data of transactions into binary format after arranging the items in the transaction in lexicographical order and returns the binarized transaction data along with the list of items.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Preprocess.get_items_dict">
+<code class="descclassname">Preprocess.</code><code class="descname">get_items_dict</code><span class="sig-paren">(</span><em>transactions</em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.get_items_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of all items along with it’s binarized index.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Preprocess.get_transactions">
+<code class="descclassname">Preprocess.</code><code class="descname">get_transactions</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#Preprocess.get_transactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the raw data of the transactions</p>
+</dd></dl>
+
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Ashwin Nallan, Darshan Prabhune, Kaushik Nimbalkar
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

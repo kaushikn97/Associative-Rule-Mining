@@ -1,0 +1,195 @@
+sliced cheese, 241  ---> whole milk,2513  0.44
+hard cheese, 241  ---> whole milk,2513  0.411
+ham, 256  ---> whole milk,2513  0.441
+butter milk, 275  ---> other vegetables,1903  0.371
+butter milk, 275  ---> whole milk,2513  0.415
+oil, 276  ---> whole milk,2513  0.402
+onions, 305  ---> other vegetables,1903  0.459
+onions, 305  ---> whole milk,2513  0.39
+hygiene articles, 324  ---> whole milk,2513  0.389
+berries, 327  ---> yogurt,1372  0.318
+berries, 327  ---> other vegetables,1903  0.309
+berries, 327  ---> whole milk,2513  0.355
+hamburger meat, 327  ---> other vegetables,1903  0.416
+hamburger meat, 327  ---> whole milk,2513  0.443
+sugar, 333  ---> other vegetables,1903  0.318
+sugar, 333  ---> whole milk,2513  0.444
+dessert, 365  ---> other vegetables,1903  0.312
+dessert, 365  ---> whole milk,2513  0.37
+long life bakery product, 368  ---> whole milk,2513  0.361
+waffles, 378  ---> whole milk,2513  0.331
+cream cheese, 390  ---> yogurt,1372  0.313
+cream cheese, 390  ---> other vegetables,1903  0.346
+cream cheese, 390  ---> whole milk,2513  0.415
+white bread, 414  ---> other vegetables,1903  0.326
+white bread, 414  ---> whole milk,2513  0.406
+chicken, 422  ---> other vegetables,1903  0.417
+chicken, 422  ---> whole milk,2513  0.41
+frozen vegetables, 473  ---> other vegetables,1903  0.37
+frozen vegetables, 473  ---> whole milk,2513  0.425
+chocolate, 488  ---> whole milk,2513  0.336
+napkins, 515  ---> whole milk,2513  0.377
+beef, 516  ---> root vegetables,1072  0.331
+beef, 516  ---> other vegetables,1903  0.376
+beef, 516  ---> whole milk,2513  0.405
+curd, 524  ---> yogurt,1372  0.324
+curd, 524  ---> other vegetables,1903  0.323
+curd, 524  ---> whole milk,2513  0.49
+butter, 545  ---> other vegetables,1903  0.361
+butter, 545  ---> whole milk,2513  0.497
+pork, 567  ---> other vegetables,1903  0.376
+pork, 567  ---> whole milk,2513  0.384
+coffee, 571  ---> whole milk,2513  0.322
+margarine, 576  ---> other vegetables,1903  0.337
+margarine, 576  ---> whole milk,2513  0.413
+frankfurter, 580  ---> rolls/buns,1809  0.326
+frankfurter, 580  ---> whole milk,2513  0.348
+domestic eggs, 624  ---> other vegetables,1903  0.351
+domestic eggs, 624  ---> whole milk,2513  0.473
+brown bread, 638  ---> whole milk,2513  0.389
+whipped/sour cream, 705  ---> other vegetables,1903  0.403
+whipped/sour cream, 705  ---> whole milk,2513  0.45
+fruit/vegetable juice, 711  ---> whole milk,2513  0.368
+pip fruit, 744  ---> other vegetables,1903  0.345
+pip fruit, 744  ---> whole milk,2513  0.398
+newspapers, 785  ---> whole milk,2513  0.343
+citrus fruit, 814  ---> other vegetables,1903  0.349
+citrus fruit, 814  ---> whole milk,2513  0.369
+pastry, 875  ---> whole milk,2513  0.374
+sausage, 924  ---> rolls/buns,1809  0.326
+sausage, 924  ---> whole milk,2513  0.318
+tropical fruit, 1032  ---> other vegetables,1903  0.342
+tropical fruit, 1032  ---> whole milk,2513  0.403
+root vegetables, 1072  ---> other vegetables,1903  0.435
+root vegetables, 1072  ---> whole milk,2513  0.449
+bottled water, 1087  ---> whole milk,2513  0.311
+yogurt, 1372  ---> other vegetables,1903  0.311
+yogurt, 1372  ---> whole milk,2513  0.402
+rolls/buns, 1809  ---> whole milk,2513  0.308
+other vegetables, 1903  ---> whole milk,2513  0.387
+curd, 524  ---> whole milk,2513  0.49
+curd, 524  ---> yogurt,1372  0.324
+yogurt, 1372  ---> whole milk,2513  0.402
+curd, whole milk, 257  ---> yogurt,1372  0.385
+curd, yogurt, 170  ---> whole milk,2513  0.582
+butter, 545  ---> other vegetables,1903  0.361
+butter, 545  ---> whole milk,2513  0.497
+other vegetables, 1903  ---> whole milk,2513  0.387
+butter, other vegetables, 197  ---> whole milk,2513  0.574
+butter, whole milk, 271  ---> other vegetables,1903  0.417
+other vegetables, 1903  ---> whole milk,2513  0.387
+pork, 567  ---> other vegetables,1903  0.376
+pork, 567  ---> whole milk,2513  0.384
+other vegetables, pork, 213  ---> whole milk,2513  0.469
+pork, whole milk, 218  ---> other vegetables,1903  0.459
+domestic eggs, 624  ---> other vegetables,1903  0.351
+domestic eggs, 624  ---> whole milk,2513  0.473
+other vegetables, 1903  ---> whole milk,2513  0.387
+domestic eggs, other vegetables, 219  ---> whole milk,2513  0.553
+domestic eggs, whole milk, 295  ---> other vegetables,1903  0.41
+whipped/sour cream, 705  ---> other vegetables,1903  0.403
+yogurt, 1372  ---> other vegetables,1903  0.311
+other vegetables, whipped/sour cream, 284  ---> yogurt,1372  0.352
+whipped/sour cream, yogurt, 204  ---> other vegetables,1903  0.49
+whipped/sour cream, 705  ---> whole milk,2513  0.45
+yogurt, 1372  ---> whole milk,2513  0.402
+whipped/sour cream, whole milk, 317  ---> yogurt,1372  0.338
+whipped/sour cream, yogurt, 204  ---> whole milk,2513  0.525
+other vegetables, 1903  ---> whole milk,2513  0.387
+whipped/sour cream, 705  ---> other vegetables,1903  0.403
+whipped/sour cream, 705  ---> whole milk,2513  0.45
+other vegetables, whipped/sour cream, 284  ---> whole milk,2513  0.507
+whipped/sour cream, whole milk, 317  ---> other vegetables,1903  0.454
+fruit/vegetable juice, 711  ---> whole milk,2513  0.368
+other vegetables, 1903  ---> whole milk,2513  0.387
+fruit/vegetable juice, other vegetables, 207  ---> whole milk,2513  0.498
+fruit/vegetable juice, whole milk, 262  ---> other vegetables,1903  0.393
+other vegetables, 1903  ---> whole milk,2513  0.387
+pip fruit, 744  ---> other vegetables,1903  0.345
+pip fruit, 744  ---> whole milk,2513  0.398
+other vegetables, pip fruit, 257  ---> whole milk,2513  0.518
+pip fruit, whole milk, 296  ---> other vegetables,1903  0.449
+citrus fruit, 814  ---> other vegetables,1903  0.349
+root vegetables, 1072  ---> other vegetables,1903  0.435
+citrus fruit, other vegetables, 284  ---> root vegetables,1072  0.359
+citrus fruit, root vegetables, 174  ---> other vegetables,1903  0.586
+citrus fruit, 814  ---> whole milk,2513  0.369
+yogurt, 1372  ---> whole milk,2513  0.402
+citrus fruit, whole milk, 300  ---> yogurt,1372  0.337
+citrus fruit, yogurt, 213  ---> whole milk,2513  0.474
+citrus fruit, 814  ---> other vegetables,1903  0.349
+citrus fruit, 814  ---> whole milk,2513  0.369
+other vegetables, 1903  ---> whole milk,2513  0.387
+citrus fruit, other vegetables, 284  ---> whole milk,2513  0.451
+citrus fruit, whole milk, 300  ---> other vegetables,1903  0.427
+other vegetables, 1903  ---> whole milk,2513  0.387
+pastry, 875  ---> whole milk,2513  0.374
+other vegetables, pastry, 222  ---> whole milk,2513  0.468
+pastry, whole milk, 327  ---> other vegetables,1903  0.318
+other vegetables, 1903  ---> whole milk,2513  0.387
+sausage, 924  ---> whole milk,2513  0.318
+other vegetables, sausage, 265  ---> whole milk,2513  0.377
+sausage, whole milk, 294  ---> other vegetables,1903  0.34
+root vegetables, 1072  ---> other vegetables,1903  0.435
+tropical fruit, 1032  ---> other vegetables,1903  0.342
+other vegetables, tropical fruit, 353  ---> root vegetables,1072  0.343
+root vegetables, tropical fruit, 207  ---> other vegetables,1903  0.585
+root vegetables, 1072  ---> whole milk,2513  0.449
+tropical fruit, 1032  ---> whole milk,2513  0.403
+root vegetables, tropical fruit, 207  ---> whole milk,2513  0.57
+tropical fruit, 1032  ---> other vegetables,1903  0.342
+yogurt, 1372  ---> other vegetables,1903  0.311
+other vegetables, tropical fruit, 353  ---> yogurt,1372  0.343
+tropical fruit, yogurt, 288  ---> other vegetables,1903  0.42
+tropical fruit, 1032  ---> whole milk,2513  0.403
+yogurt, 1372  ---> whole milk,2513  0.402
+tropical fruit, whole milk, 416  ---> yogurt,1372  0.358
+tropical fruit, yogurt, 288  ---> whole milk,2513  0.517
+rolls/buns, 1809  ---> whole milk,2513  0.308
+tropical fruit, 1032  ---> whole milk,2513  0.403
+rolls/buns, tropical fruit, 242  ---> whole milk,2513  0.446
+other vegetables, 1903  ---> whole milk,2513  0.387
+tropical fruit, 1032  ---> other vegetables,1903  0.342
+tropical fruit, 1032  ---> whole milk,2513  0.403
+other vegetables, tropical fruit, 353  ---> whole milk,2513  0.476
+tropical fruit, whole milk, 416  ---> other vegetables,1903  0.404
+root vegetables, 1072  ---> other vegetables,1903  0.435
+yogurt, 1372  ---> other vegetables,1903  0.311
+root vegetables, yogurt, 254  ---> other vegetables,1903  0.5
+root vegetables, 1072  ---> whole milk,2513  0.449
+yogurt, 1372  ---> whole milk,2513  0.402
+root vegetables, yogurt, 254  ---> whole milk,2513  0.563
+root vegetables, 1072  ---> other vegetables,1903  0.435
+rolls/buns, root vegetables, 239  ---> other vegetables,1903  0.502
+rolls/buns, 1809  ---> whole milk,2513  0.308
+root vegetables, 1072  ---> whole milk,2513  0.449
+rolls/buns, root vegetables, 239  ---> whole milk,2513  0.523
+other vegetables, 1903  ---> whole milk,2513  0.387
+root vegetables, 1072  ---> other vegetables,1903  0.435
+root vegetables, 1072  ---> whole milk,2513  0.449
+other vegetables, root vegetables, 466  ---> whole milk,2513  0.489
+other vegetables, whole milk, 736  ---> root vegetables,1072  0.31
+root vegetables, whole milk, 481  ---> other vegetables,1903  0.474
+bottled water, 1087  ---> whole milk,2513  0.311
+other vegetables, 1903  ---> whole milk,2513  0.387
+bottled water, other vegetables, 244  ---> whole milk,2513  0.434
+bottled water, whole milk, 338  ---> other vegetables,1903  0.314
+yogurt, 1372  ---> whole milk,2513  0.402
+soda, yogurt, 269  ---> whole milk,2513  0.383
+yogurt, 1372  ---> other vegetables,1903  0.311
+rolls/buns, yogurt, 338  ---> other vegetables,1903  0.334
+rolls/buns, 1809  ---> whole milk,2513  0.308
+yogurt, 1372  ---> whole milk,2513  0.402
+rolls/buns, yogurt, 338  ---> whole milk,2513  0.453
+other vegetables, 1903  ---> whole milk,2513  0.387
+yogurt, 1372  ---> other vegetables,1903  0.311
+yogurt, 1372  ---> whole milk,2513  0.402
+other vegetables, yogurt, 427  ---> whole milk,2513  0.513
+whole milk, yogurt, 551  ---> other vegetables,1903  0.397
+other vegetables, 1903  ---> whole milk,2513  0.387
+other vegetables, soda, 322  ---> whole milk,2513  0.425
+soda, whole milk, 394  ---> other vegetables,1903  0.348
+other vegetables, 1903  ---> whole milk,2513  0.387
+rolls/buns, 1809  ---> whole milk,2513  0.308
+other vegetables, rolls/buns, 419  ---> whole milk,2513  0.42
+rolls/buns, whole milk, 557  ---> other vegetables,1903  0.316
